@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 
 import br.gov.sp.fatec.springlabIV.model.Anotacao;
 
-public interface AnotacaoRepository extends JpaRepository{
+public interface AnotacaoRepository extends JpaRepository<Anotacao, Long>{
 
     public List<Anotacao> findByUsuarioNome(String nomeUsuario);
 
