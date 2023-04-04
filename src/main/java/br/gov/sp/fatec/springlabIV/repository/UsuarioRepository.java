@@ -9,6 +9,8 @@ import br.gov.sp.fatec.springlabIV.model.Usuario;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 
+    public List<Usuario> findByAutorizacoesNome(String nomeAutorizacao);
+    
     public Usuario findByNome(String nome);
 
     @Query("select u from Usuario u where u.nome = ?1")

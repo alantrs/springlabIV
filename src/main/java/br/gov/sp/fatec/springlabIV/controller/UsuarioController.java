@@ -29,5 +29,4 @@ public class UsuarioController {
     public Usuario novoUsuario(@RequestBody Usuario usuario) {
     return service.novoUsuario(usuario);
     }
- 
 }
