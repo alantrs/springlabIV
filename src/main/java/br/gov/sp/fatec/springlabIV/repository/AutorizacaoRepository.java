@@ -10,5 +10,5 @@ public interface AutorizacaoRepository extends JpaRepository<Autorizacao, Long>{
 
         public Optional<Autorizacao> findByNome(String nome);
     
-    }
 }
+
