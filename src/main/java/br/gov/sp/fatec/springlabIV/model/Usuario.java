@@ -29,7 +29,6 @@ public class Usuario {
     private String nome;
 
     @Column(name = "usr_senha")
-    @JsonIgnore
     private String senha;
 
     @OneToMany(mappedBy = "usuario", fetch = FetchType.LAZY)
